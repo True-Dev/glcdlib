@@ -22,6 +22,8 @@
 
 #define swap(a, b) { byte t = a; a = b; b = t; }
 
+typedef uint8_t PROGMEM prog_uint8_t;
+
 struct FontInfo {
     byte height, width, first, count;
     prog_uint8_t* image;
