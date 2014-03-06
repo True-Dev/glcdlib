@@ -180,7 +180,8 @@ void GLCD_proxy::sendLCDMessage(byte length) {
         // send packet out once we can
         while (!rf12_canSend())
             rf12_recvDone();
-        rf12_sendStart(RF12_HDR_ACK, msg, length, 1);
+        rf12_sendStart(RF12_HDR_ACK, msg, length);
+	rf12_sendWait(1);
         // wait up to 100 ms to get an ack back
         MilliTimer t;
         while (!t.poll(100)) {
