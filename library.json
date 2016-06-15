@@ -1,0 +1,14 @@
+{
+  "name": "GLCDlib",
+  "keywords": "ST7565, LCD, GLCD",
+  "description": "A graphics library for 128x64 LCD displays based on the ST7565 ",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/jcw/jeelib.git"
+  },
+  "exclude": "Doxy*",
+  "examples": "examples/*/*.ino",
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}
