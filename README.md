@@ -1,4 +1,4 @@
-About {#index}
+About
 =====
 
 **GLCDlib** is a graphics library for 128x64 displays based on the ST7565.
